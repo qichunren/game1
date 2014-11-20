@@ -2,7 +2,7 @@ Candy.MainMenu = function(game){};
 Candy.MainMenu.prototype = {
 	create: function(){
 		// display images
-		this.add.sprite(0, 0, 'background');
+		//this.add.sprite(0, 0, 'background');
     // this.add.sprite(-130, Candy.GAME_HEIGHT-514, 'monster-cover');
     // this.add.sprite((Candy.GAME_WIDTH-395)/2, 60, 'title');
 		// add the button that will start the game
