@@ -3,7 +3,7 @@ Candy.Boot = function(game){};
 Candy.Boot.prototype = {
 	preload: function(){
 		// preload the loading indicator first before anything else
-		this.load.image('preloaderBar', '/assets/images/loading-bar.png');
+		this.load.image('preloaderBar', '../assets/images/loading-bar.png');
 	},
 	create: function(){
 		// set scale options
