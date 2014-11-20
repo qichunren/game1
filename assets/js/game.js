@@ -1,3 +1,4 @@
+DEBUG = true;
 Candy.Game = function(game){
 	// define needed variables for Candy.Game
 	this._player = null;
@@ -137,11 +138,13 @@ Candy.Game.prototype = {
 	},
 
   render : function(){
-    this.game.debug.spriteInfo(this._power, 32, 32);
-    this.game.debug.spriteInfo(this._candy, 32, 102);
+      if(DEBUG){
+          this.game.debug.spriteInfo(this._power, 32, 32);
+          this.game.debug.spriteInfo(this._candy, 32, 102);
 
-        this.game.debug.body(this._candy);
-        this.game.debug.body(this._power);
+          this.game.debug.body(this._candy);
+          this.game.debug.body(this._power);
+      }
   }
 
 };
