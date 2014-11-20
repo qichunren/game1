@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Phaser</title>
+    <!--<base href="../">-->
+    <script type='text/javascript' src='phaser/build/phaser.min.js'></script>
+    <script type='text/javascript' src='assets/js/boot.js'></script>
+    <script type='text/javascript' src='assets/js/preloader.js'></script>
+    <script type='text/javascript' src='assets/js/main_menu.js'></script>
+    <script type='text/javascript' src='assets/js/game.js'></script>
+
+    <!--<meta name="viewport" content="initial-scale=1 maximum-scale=1 user-scalable=0" />-->
+    <script type='text/javascript'>
+        (function () {
+            var game = new Phaser.Game(640, 960, Phaser.AUTO, 'game');
+            game.state.add('Boot', Candy.Boot);
+            game.state.add('Preloader', Candy.Preloader);
+            game.state.add('MainMenu', Candy.MainMenu);
+            game.state.add('Game', Candy.Game);
+            game.state.start('Boot');
+        })();
+    </script>
+</head>
+<body>
+<div id="game"></div>
+</body>
+</html>
